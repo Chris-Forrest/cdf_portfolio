@@ -32,19 +32,21 @@ const ProjectSection = () => {
                 <p>
                 This web app helps a user find a strain of medical marijuna to meet their symptoms.
                 </p>
-
-                <p>The app is fully operational if the CORS extension is turned on in your browser.
+                <p>
+                    The app is fully operational if the CORS extension is turned on in your browser.
                 </p> 
-                <p>HTML, CSS, LESS, JavaScript, React, Redux, Node.js, Keras, Tenserflow, Flask</p>   
-
-                <p>• Created the sign-up and login forms and utilized form validation to prevent errors from user input
-                    </p>
-                <p>• Implemented styling for the React components using styled components
-                    </p>
-
-                <p>• Made a get request using AXIOS and used a json web token to to authorize the user
-                    </p>
-                
+                <p>
+                    HTML, CSS, LESS, JavaScript, React, Redux, Node.js, Keras, Tenserflow, Flask
+                </p>   
+                <p>
+                    • Created the sign-up and login forms and utilized form validation to prevent errors from user input
+                </p>
+                <p>
+                    • Implemented styling for the React components using styled components
+                </p>
+                <p>
+                    • Made a get request using AXIOS and used a json web token to to authorize the user
+                </p>  
             </StyledProjectCard>
             <StyledProjectCard>
                 <h4>Todo App</h4>
