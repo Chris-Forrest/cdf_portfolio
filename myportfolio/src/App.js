@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ProjectSection from './components/projectsSection';
 import ResumeSection from './components/resumeSection';
+import ContactSection from './components/contactSection';
 import styled from 'styled-components';
 
 
@@ -32,9 +33,17 @@ function App() {
             <ResumeSection />
 
             <button onClick= {() => resumeSectionExpanded(false)}>Hide</button>
+
           </div>
         )}
         <button onClick= {() => contactSectionExpanded(true)}>CONTACT</button>
+        { contactSection && (
+          <div>
+            <ContactSection />
+
+            <button onClick= {() => contactSectionExpanded(false)}>Hide</button>
+          </div>
+        )}
         
       </nav>
       <div className='body'>
