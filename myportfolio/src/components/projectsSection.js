@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const StyledComponent = styled.div`
+const StyledComponent = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -24,7 +24,7 @@ flex-wrap: wrap;
 position: relative;
 justify-content: space-between;
 `
-export const StyledVerticalBox = styled.div`
+ const StyledVerticalBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1px;
@@ -72,7 +72,7 @@ const ProjectSection = () => {
                 <a href={'https://school-in-the-clouds-char.netlify.app/signUp' }>Deployed React Site</a>
                 <a href={'https://github.com/School-in-the-clouds-bw/SITC_FE' }>Github repo</a>
                 <p>
-                This was a multidisciplinary team project that allows an administrator to assign a tutor to a student for tutoring .
+                This was a multidisciplinary team project that allows an administrator to assign a tutor to a student for tutoring 
                 </p>
                 <p>
                     The React app requires a user to sign up and then login.
