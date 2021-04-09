@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import ProjectSection from './components/projectsSection';
-import ResumeSection from './components/resumeSection';
 import ContactSection from './components/contactSection';
 import styled from 'styled-components';
 
@@ -11,10 +10,7 @@ import styled from 'styled-components';
 function App() {
 
   const [ projectsSection, projectsSectionExpanded ] = useState(false);
-  const [ resumeSection, resumeSectionExpanded ] = useState(false);
   const [ contactSection, contactSectionExpanded ] = useState(false);
-
-
 
 
 
@@ -27,15 +23,6 @@ function App() {
       <nav>
         <button onClick= {() => projectsSectionExpanded(true)}>PROJECTS</button>
         
-        <button onClick= {() => resumeSectionExpanded(true)}>RESUME</button>
-        {resumeSection && (
-          <div className='resumeSection'>
-            <ResumeSection />
-
-            <button onClick= {() => resumeSectionExpanded(false)}>Hide</button>
-
-          </div>
-        )}
         <button onClick= {() => contactSectionExpanded(true)}>CONTACT</button>
         { contactSection && (
           <div>
