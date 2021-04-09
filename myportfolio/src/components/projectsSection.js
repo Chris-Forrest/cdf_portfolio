@@ -6,7 +6,6 @@ const StyledComponent = styled.div`
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 `;
 
 const StyledProjectCard = styled.div`
@@ -78,7 +77,7 @@ const ProjectSection = () => {
                     The React app requires a user to sign up and then login.
                 </p>
                 <p>
-                HTML, CSS, LESS, JavaScript, React, Axios, Yup,Styled components, material UI, Node.js, Express, knex
+                HTML, CSS, LESS, JavaScript, React, Axios, Yup,Styled components, material UI, Node.js, Express, Knex
                 </p>
                 <p>
                 • Created the React app styled with both styled components and material UI
@@ -92,25 +91,31 @@ const ProjectSection = () => {
                 </StyledVerticalBox>
             </StyledProjectCard>
 
+
             <StyledProjectCard>
                 <StyledVerticalBox>
-                <h4>Github User Cards</h4>
-                <a href={'https://react-github-user-card-nine-fawn.vercel.app/'} > Deployed App</a>
-                <a href={'https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest'} >Github Repo</a>
+                <h4>Co-make</h4>
+                <a href={'https://github.com/Co-make-2/Back-end'} >Github repo</a>
                 <p>
-                    This is a react app that interacts with the github api to get the inputed users bio and followers.
-                </p>
-                <p> 
-                    React, Styled-components, Axios, get requests
+                This app allows a community/organization to match volunteers with projects that need to be completed.
                 </p>
                 <p>
-                    • Made a seach input that allows the search of github users 
+                HTML, CSS, LESS, JavaScript, React, Axios, Yup,Styled components, material UI, Node.js, Express, Knex, SQLite3
                 </p>
                 <p>
-                    • Use axios to make get requests to the github api
+                • Made the backend using Node.js, Express
                 </p>
-                <p> 
-                    • Styled with Styled-components and deployed on vercel
+                <p>
+                • Created all listings database,schema,routes,models and tests
+                </p>
+                <p>
+                • Implemented Knex to query a database created using SQLite3
+                </p>
+                <p>
+                • Performed tests using jest and supertest
+                </p>
+                <p>
+                • Tested routes with postman to ensure posted and recieved data
                 </p>
                 </StyledVerticalBox>
             </StyledProjectCard>
@@ -140,25 +145,26 @@ const ProjectSection = () => {
            
             <StyledProjectCard>
                 <StyledVerticalBox>
-                <h4>Co-make</h4>
-                <a href={'https://github.com/Co-make-2/Back-end'} >Github repo</a>
+                <h4>Github User Cards</h4>
+                <a href={'https://react-github-user-card-nine-fawn.vercel.app/'} > Deployed App</a>
+                <a href={'https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest'} >Github Repo</a>
                 <p>
-                This app allows a community/organization to match volunteers with projects that need to be completed.
+                    This is a react app that interacts with the github api to get the inputed users bio and followers.
+                </p>
+                <p> 
+                    React, Styled-components, Axios, get requests
                 </p>
                 <p>
-                HTML, CSS, LESS, JavaScript, React, Axios, Yup,Styled components, material UI, Node.js, Express, knex, SQLite
+                    • Made a seach input that allows the search of github users 
                 </p>
                 <p>
-                • created all listings database,schema,routes,models and tests
+                    • Use axios to make get requests to the github api
                 </p>
-                <p>
-                • Implemented knex to query a database created using SQLite3
-                </p>
-                <p>
-                • performed tests using jest and supertest
+                <p> 
+                    • Styled with Styled-components and deployed on vercel
                 </p>
                 </StyledVerticalBox>
-            </StyledProjectCard>
+            </StyledProjectCard>  
             </StyledComponent>
         </div>
     )
