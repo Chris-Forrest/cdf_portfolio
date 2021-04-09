@@ -6,8 +6,9 @@
 
 
 .body{
-  
+  font-family: 'Dela Gothic One', cursive;
 }
+
 .App-header {
   background-color: #3044f2;
   display: flex;
@@ -16,6 +17,7 @@
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'New Tegomin', serif;
 }
 
 .App-link {

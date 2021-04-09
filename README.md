@@ -2,3 +2,4 @@
 Technologies
 React
 styled-components
+CSS
