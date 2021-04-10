@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
-import styled from 'styled-components';
 
 
 
