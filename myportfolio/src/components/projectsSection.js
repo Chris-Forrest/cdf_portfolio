@@ -31,6 +31,13 @@ justify-content: space-between;
   align: center;
 `;
 
+const StyledLink = styled.td`
+  color:  #0000EE;
+  textDecoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+`
+
 const ProjectSection = () => {
 
 
@@ -42,8 +49,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4 >MediCabinet</h4>
-                <a href={'https://medicabinett.netlify.app/'} > Deployed App</a>
-                <a href={'https://github.com/Build-Week-Medicine-Cabinet/front-end'} > Github Repo</a>
+                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Deployed App</StyledLink>
+                <StyledLink onClick={() => window.open("https://github.com/Build-Week-Medicine-Cabinet/front-end", "_blank")}>Github Repo</StyledLink>
                 <p>
                 This web app helps a user find a strain of medical marijuna to meet their symptoms.
                 </p>
@@ -68,8 +75,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>School In The Clouds</h4>
-                <a href={'https://school-in-the-clouds-char.netlify.app/signUp' }>Deployed React Site</a>
-                <a href={'https://github.com/School-in-the-clouds-bw/SITC_FE' }>Github repo</a>
+                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Deployed React App</StyledLink>
+                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Github repo</StyledLink>
                 <p>
                 This was a multidisciplinary team project that allows an administrator to assign a tutor to a student for tutoring 
                 </p>
@@ -95,7 +102,7 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Co-make</h4>
-                <a href={'https://github.com/Co-make-2/Back-end'} >Github repo</a>
+                <StyledLink onClick={() => window.open("https://github.com/Co-make-2/Back-end", "_blank")}>Github repo</StyledLink>
                 <p>
                 This app allows a community/organization to match volunteers with projects that need to be completed.
                 </p>
@@ -123,8 +130,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Todo App</h4>
-                <a href={'https://fervent-noyce-ff07a4.netlify.app/'} >Deployed App</a>
-                <a href={'https://github.com/Chris-Forrest/React-Todo/tree/Chris-Forrest'} >Github Repo</a>
+                <StyledLink onClick={() => window.open("https://fervent-noyce-ff07a4.netlify.app/", "_blank")}>Deployed App</StyledLink>
+                <StyledLink onClick={() => window.open("https://github.com/Chris-Forrest/React-Todo/tree/Chris-Forrest", "_blank")}>Github repo</StyledLink>
                 <p>
                     A basic todo app.
                 </p>
@@ -146,8 +153,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Github User Cards</h4>
-                <a href={'https://react-github-user-card-nine-fawn.vercel.app/'} > Deployed App</a>
-                <a href={'https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest'} >Github Repo</a>
+                <StyledLink onClick={() => window.open("https://react-github-user-card-nine-fawn.vercel.app/", "_blank")}>Deployed App</StyledLink>
+                <StyledLink onClick={() => window.open("https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest", "_blank")}>Github repo</StyledLink>
                 <p>
                     This is a react app that interacts with the github api to get the inputed users bio and followers.
                 </p>
