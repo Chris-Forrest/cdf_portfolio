@@ -41,8 +41,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>School In The Clouds</h4>
-                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Deployed React App</StyledLink>
-                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Github repo</StyledLink>
+                <StyledLink onClick={() => window.open("https://school-in-the-clouds-char.netlify.app/signUp", "_blank")}>Deployed React App</StyledLink>
+                <StyledLink onClick={() => window.open("https://github.com/School-in-the-clouds-bw/SITC_FE/tree/master/sitc", "_blank")}>Github repo</StyledLink>
                 <p>
                 This was a multidisciplinary team project that allows an administrator to assign a tutor to a student for tutoring 
                 </p>
