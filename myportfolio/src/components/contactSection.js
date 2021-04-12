@@ -1,10 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledCSection = styled.div`
-display: flex;
-justify-content: space-around;
-`
+import StyledCSection from "./styledComponents";
 
 const ContactSection = () => {
 
