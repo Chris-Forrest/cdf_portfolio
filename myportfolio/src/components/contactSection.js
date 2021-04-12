@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledCSection from "./styledComponents";
+import {StyledCSection} from "./styledComponents";
 
 const ContactSection = () => {
 
