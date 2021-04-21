@@ -122,7 +122,7 @@ const ProjectSection = () => {
                 <StyledLink onClick={() => window.open("https://react-github-user-card-nine-fawn.vercel.app/", "_blank")}>Deployed App</StyledLink>
                 <StyledLink onClick={() => window.open("https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest", "_blank")}>Github repo</StyledLink>
                 <p>
-                    This is a react app that interacts with the github api to get the inputed users bio and followers.
+                    This is a react app that interacts with the github api to get the inputted users bio and followers.
                 </p>
                 <p> 
                     React, Styled-components, Axios, get requests
