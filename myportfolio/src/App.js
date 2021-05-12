@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
-
+import BootstrapCarousel from './components/carousel';
 
 
 
@@ -43,6 +43,7 @@ function App() {
         )}
 
       </div>
+      <BootstrapCarousel />
     </div>
   );
 }
