@@ -9,16 +9,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.App-header {
-  background-color: #3044f2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: 'New Tegomin', serif;
-}
+
 
 .App-link {
   color: #61dafb;
