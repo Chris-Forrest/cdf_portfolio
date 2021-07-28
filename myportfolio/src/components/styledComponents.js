@@ -6,6 +6,16 @@ export const StyledComponent = styled.div`
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (max-width: 1007px){
+    background-color: #d7f095;
+  }
+
+  @media (max-width: 640px){
+    background-color:#e7eba0;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const StyledProjectCard = styled.div`
@@ -22,6 +32,14 @@ export const StyledProjectCard = styled.div`
   flex-wrap: wrap;
   position: relative;
   justify-content: space-between;
+
+  @media (max-width: 1007px){
+  width: 45%;
+  }
+
+  @media (max-width: 640px){
+  width: 75%
+  }
 `;
  export const StyledVerticalBox = styled.div`
   display: flex;
@@ -58,6 +76,7 @@ export const StyledHeader = styled.div`
 
   @media (max-width: 640px){
     justify-content: space-between;
-    background-color:orange;
+    background-color:#f1f58c;
+    color: #3044f2;
   }
 `;
