@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
+import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
-
+//import BootstrapCarousel from './components/carousel';
 
 
 
@@ -15,10 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>Chris Forrest</h1>
-         <h2>Portfolio</h2>
-      </header>
+      <Header />
       <nav>
         <button onClick= {() => projectsSectionExpanded(true)}>PROJECTS</button>
         
@@ -43,6 +41,7 @@ function App() {
         )}
 
       </div>
+      
     </div>
   );
 }
