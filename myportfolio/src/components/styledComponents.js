@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import React from 'react';
 
 
 export const StyledComponent = styled.div`
@@ -80,3 +81,32 @@ export const StyledHeader = styled.div`
     color: #3044f2;
   }
 `;
+
+const animation = keyframes`
+  0% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
+  25% { opacity: 0.50; transform: translateY(200) skewY(13deg) skewX(13deg) rotateZ(30deg); filter:blur(4px);}
+  75% { opacity: 0.75; transform: translateY(100) skewY(6deg) skewX(6deg) rotateZ(20deg); filter:blur(2px);}
+  100% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
+`
+
+export const AnimatedWelcomeMessage = styled.span`
+  display: inline-block;
+  font-size: 5vh;
+  opacity:0%;
+  animation-name: ${animation};
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+`
+
+export default function TextAnimation(){
+  return (
+      <AnimatedWelcomeMessage>
+        <p>Welcome</p>
+        <p>to my mobile</p>
+        <p>responsive</p>
+        <p>react app</p>
+      </AnimatedWelcomeMessage>
+    )
+};
+
