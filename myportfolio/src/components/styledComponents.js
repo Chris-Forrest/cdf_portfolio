@@ -106,6 +106,7 @@ export default function TextAnimation(){
         <p>to my mobile</p>
         <p>responsive</p>
         <p>react app</p>
+        <p>portfolio</p>
       </AnimatedWelcomeMessage>
     )
 };
