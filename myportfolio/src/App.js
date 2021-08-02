@@ -4,7 +4,7 @@ import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
-//import BootstrapCarousel from './components/carousel';
+
 
 
 
