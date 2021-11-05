@@ -128,7 +128,7 @@ const ProjectSection = () => {
                     React, Styled-components, Axios, get requests
                 </p>
                 <p>
-                    • Made a seach input that allows the search of github users 
+                    • Made a search input that allows the search of github users 
                 </p>
                 <p>
                     • Use axios to make get requests to the github api
