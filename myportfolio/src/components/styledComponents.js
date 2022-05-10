@@ -84,9 +84,10 @@ export const StyledHeader = styled.div`
 
 const animation = keyframes`
   0% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
-  25% { opacity: 0.50; transform: translateY(200) skewY(13deg) skewX(13deg) rotateZ(30deg); filter:blur(4px);}
-  75% { opacity: 0.75; transform: translateY(100) skewY(6deg) skewX(6deg) rotateZ(20deg); filter:blur(2px);}
-  100% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
+  15% { opacity: 0.50; transform: translateY(200) skewY(13deg) skewX(13deg) rotateZ(30deg); filter:blur(4px);}
+  35% { opacity: 0.75; transform: translateY(100) skewY(6deg) skewX(6deg) rotateZ(20deg); filter:blur(2px);}
+  60% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
+  100% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
 `
 
 export const AnimatedWelcomeMessage = styled.span`
@@ -94,7 +95,7 @@ export const AnimatedWelcomeMessage = styled.span`
   font-size: 5vh;
   opacity:0%;
   animation-name: ${animation};
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
 
 `
