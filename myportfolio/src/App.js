@@ -5,9 +5,6 @@ import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
-import Carousel from './components/carousel';
-
-
 
 
 function App() {
@@ -46,7 +43,6 @@ function App() {
       </div>
 
       <WelcomeMessage />
-      <Carousel />
       
     </div>
   );
