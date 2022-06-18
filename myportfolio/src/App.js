@@ -5,6 +5,7 @@ import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
+import About from './components/aboutSection';
 
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
         )}
 
       </div>
-
+      
+      <About />
       <WelcomeMessage />
       
     </div>
