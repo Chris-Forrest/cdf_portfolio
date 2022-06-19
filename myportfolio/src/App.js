@@ -6,7 +6,7 @@ import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
 import About from './components/aboutSection';
-
+import background from './images/whiteTriangles.jpg';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${background})`}}>
       <Header />
       <nav>
         <button onClick= {() => projectsSectionExpanded(true)}>PROJECTS</button>
@@ -42,7 +42,7 @@ function App() {
         )}
 
       </div>
-      
+
       <About />
       <WelcomeMessage />
       

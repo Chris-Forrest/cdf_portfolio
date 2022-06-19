@@ -1,6 +1,20 @@
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
 
+export const StyledLink = styled.td`
+  color:  #0000EE;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    color: purple;
+  }
+
+  &.active {
+    color: red;
+  }
+`;
 
 export const StyledComponent = styled.div`
   display: flex;
@@ -21,6 +35,7 @@ export const StyledComponent = styled.div`
 
 export const StyledProjectCard = styled.div`
   display: flex;
+  opacity: 0.4;
   flex-direction: row;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 5px;
@@ -41,19 +56,21 @@ export const StyledProjectCard = styled.div`
   @media (max-width: 640px){
   width: 75%
   }
+
+  &:hover,
+  ${StyledLink}.active{
+    opacity: 1;
+  }
+  color: ${( props ) => 
+  props.path ? "red": "#0000EE"};
 `;
+
  export const StyledVerticalBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1px;
   padding: 1px;
   align: center;
-`;
-
-export const StyledLink = styled.td`
-  color:  #0000EE;
-  text-decoration: underline;
-  cursor: pointer;
 `;
 
 export const StyledCSection = styled.div`
@@ -64,6 +81,7 @@ export const StyledCSection = styled.div`
 export const StyledHeader = styled.div`
   background-color: #3044f2;
   display: flex;
+  opacity: 0.2;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -79,6 +97,10 @@ export const StyledHeader = styled.div`
     justify-content: space-between;
     background-color:#f1f58c;
     color: #3044f2;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `;
 
