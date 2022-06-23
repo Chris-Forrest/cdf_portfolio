@@ -79,14 +79,14 @@ export const StyledCSection = styled.div`
 `;
 
 export const StyledHeader = styled.div`
-  background-color: #f0e2e1;
+  background-color: #eddebb;
   display: flex;
-  opacity: 0.2;
+  opacity: 0.4;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #edc98e;
   font-family: 'New Tegomin', serif;
 
   @media (max-width: 1007px){
