@@ -79,7 +79,7 @@ export const StyledCSection = styled.div`
 `;
 
 export const StyledHeader = styled.div`
-  background-color: #3044f2;
+  background-color: #f0e2e1;
   display: flex;
   opacity: 0.2;
   flex-direction: row;
@@ -108,29 +108,37 @@ const animation = keyframes`
   0% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
   15% { opacity: 0.50; transform: translateY(200) skewY(13deg) skewX(13deg) rotateZ(30deg); filter:blur(4px);}
   35% { opacity: 0.75; transform: translateY(100) skewY(6deg) skewX(6deg) rotateZ(20deg); filter:blur(2px);}
-  60% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
-  100% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
+  70% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
+  100% { opacity: 0;  }
 `
 
 export const AnimatedWelcomeMessage = styled.span`
   display: inline-block;
-  font-size: 5vh;
-  opacity:0%;
-  animation-name: ${animation};
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
+  
+  span {
+    display: inline-block;
+    font-size: 5vh;
+    opacity:0%;
+    animation-name: ${animation};
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  }
+
+  span:nth-child(2){
+    animation-delay: 1s;
+  }
+
+  span:nth-child(3){
+    animation-delay: 2s;
+  }
 
 `
 
 export default function TextAnimation(){
-  return (
-      <AnimatedWelcomeMessage>
-        <p>Welcome</p>
-        <p>to my mobile</p>
-        <p>responsive</p>
-        <p>react app</p>
-        <p>portfolio</p>
-      </AnimatedWelcomeMessage>
-    )
+  return (<AnimatedWelcomeMessage>
+    <span>Welcome to My</span>
+    <span>mobile responsive</span>
+    <span>single page app</span>
+  </AnimatedWelcomeMessage>)
 };
 

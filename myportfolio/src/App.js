@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route, Link } from 'react-router-dom';
 import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
@@ -19,6 +19,9 @@ function App() {
     <div className="App" style={{ backgroundImage: `url(${background})`}}>
       <Header />
       <nav>
+        <Link to="/projects">Projects</Link>
+        <Link to="/about">About</Link>
+        
         <button onClick= {() => projectsSectionExpanded(true)}>PROJECTS</button>
         
         <button onClick= {() => contactSectionExpanded(true)}>CONTACT</button>
@@ -31,19 +34,22 @@ function App() {
         )}
         
       </nav>
-      <div className='body'>
-      {projectsSection && (
-          <div className='projectsSection'>
-            <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
-          <ProjectSection  />
+        
+        <div className='body'>
+        {projectsSection && (
+            <div className='projectsSection'>
+              <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
+               <ProjectSection />
 
-          <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
-         </div>
-        )}
-
-      </div>
-
-      <About />
+              <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
+          </div>
+          )}
+            
+        </div>
+      <Routes>
+         <Route path="/about" element={<About/>} />
+         <Route path="/projects" element={< ProjectSection />} />
+      </Routes>
       <WelcomeMessage />
       
     </div>
