@@ -23,11 +23,11 @@ export const StyledComponent = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 1007px){
-    background-color: #d7f095;
+    
   }
 
   @media (max-width: 640px){
-    background-color:#e7eba0;
+    
     flex-direction: column;
     align-items: center;
   }
@@ -90,7 +90,7 @@ export const StyledHeader = styled.div`
   font-family: 'New Tegomin', serif;
 
   @media (max-width: 1007px){
-    background-color: #c5f075;
+    background-color: #f7dc88;
   }
 
   @media (max-width: 640px){
