@@ -55,6 +55,7 @@ export const StyledProjectCard = styled.div`
 
   @media (max-width: 640px){
   width: 75%
+  opacity: 1;
   }
 
   &:hover,
@@ -91,12 +92,14 @@ export const StyledHeader = styled.div`
 
   @media (max-width: 1007px){
     background-color: #f7dc88;
+    justify-content: space-around;
   }
 
   @media (max-width: 640px){
-    justify-content: space-between;
+    justify-content: space-around;
     background-color:#f1f58c;
     color: #3044f2;
+    opacity: 1;
   }
 
   &:hover {
