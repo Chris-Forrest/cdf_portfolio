@@ -3,3 +3,5 @@ Technologies
 React
 styled-components
 CSS
+Bootstrap
+React-Router
