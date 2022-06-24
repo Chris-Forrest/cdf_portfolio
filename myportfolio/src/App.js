@@ -7,11 +7,12 @@ import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
 import About from './components/aboutSection';
 import background from './images/whiteTriangles.jpg';
+import Footer from './components/footer';
 
 function App() {
 
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})`}}>
+    <div className="App" style={{ backgroundImage: `url(${background})`, paddingBottom:"80px"}}>
       <Header />
       <Routes>
          <Route path="/" element={<WelcomeMessage />} />
@@ -19,6 +20,7 @@ function App() {
          <Route path="/projects" element={< ProjectSection />} />
          <Route path="/contact" element={< ContactSection />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
