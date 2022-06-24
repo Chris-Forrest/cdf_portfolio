@@ -1,42 +1,62 @@
 import React,{ Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import '../images/fallwalkcompressed.png';
-import '../images/3kayakcompressed.png'
+import fallwalk from '../images/fallwalkcompressed.png';
+import kayak from '../images/3kayakcompressed.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import wgs from "../images/wgspcompressed.png";
+import hottub from "../images/m_wgparkhottub_compress.png";
+import smallfalls from "../images/tscfallscompressed.png";
+import smallrocks from "../images/tspcompressed.png"
 
-export class BootstrapCarousel extends Component {
+
+export class BootstrapCarouselComponent extends Component {
 
     render(){
         return (
             <div>
                 <div class ='container-fluid'>
                     <div className="row title" style={{ marginBottom: "20px"}}>
-                        <div class="col-sm-12 btn-warning">
-                            About Section
-                        </div>
                     </div>
                 </div>
                 <div className='container-fluid'>
                     <Carousel>
-                        <Carousel.Item interval={500} style={{'heigh':"300px"}}>
+                        <Carousel.Item style={{'height':"300px"}}>
                             <img style={{'height':'300px'}}
-                            class="d-block w-100"
-                            src='../images/fallwalkcompressed.png'
+                            class="center-block w-50"
+                            src={fallwalk}
                             alt='fall foliage red and gold colored leaves'/>
-                            <Carousel.Caption>
-                                <h3>image one</h3>
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item style={{'height':'300px'}}>
                             <img style={{'height':'300px'}}
-                            class="d-block w-100"
-                            src={require('../images/3kayakcompressed.png')} 
+                            class="center-block w-50"
+                            src={kayak}
                             alt='three people kayaking in a river'/>
-                            <Carousel.Caption>
-                                <h3>image 2</h3>
-                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item style={{'height':'300px'}}>
+                            <img style={{'height':'300px'}}
+                            class="center-block w-50"
+                            src={wgs}
+                            alt='a long fall waterfall through a narrow gorge'/>
+                        </Carousel.Item>
+                        <Carousel.Item style={{'height':'300px'}}>
+                            <img style={{'height':'300px'}}
+                            class="center-block w-50"
+                            src={hottub}
+                            alt='waterfall carved hole in rock that looks like a hottub heart'/>
+                        </Carousel.Item>
+                        <Carousel.Item style={{'height':'300px'}}>
+                            <img style={{'height':'300px'}}
+                            class="center-block w-50"
+                            src={smallfalls}
+                            alt='small watefall section small river'/>
+                        </Carousel.Item>
+                        <Carousel.Item style={{'height':'300px'}}>
+                            <img style={{'height':'300px'}}
+                            class="center-block w-50"
+                            src={smallrocks}
+                            alt='small open section of river with small boulders'/>
                         </Carousel.Item>
                     </Carousel>
-                    <img src={require('../images/fallwalkcompressed.png')} alt="fall foliage red and yellow" />
                 </div>
 
             </div>
@@ -44,4 +64,4 @@ export class BootstrapCarousel extends Component {
     }
 }
 
-export default BootstrapCarousel;
+export default BootstrapCarouselComponent;

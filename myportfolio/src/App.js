@@ -1,50 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
+import {Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import ProjectSection from './components/projectsSection';
 import ContactSection from './components/contactSection';
 import WelcomeMessage from './components/welcomeMessage';
-
-
-
+import About from './components/aboutSection';
+import background from './images/whiteTriangles.jpg';
+import Footer from './components/footer';
 
 function App() {
 
-  const [ projectsSection, projectsSectionExpanded ] = useState(false);
-  const [ contactSection, contactSectionExpanded ] = useState(false);
-
-
-
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${background})`, paddingBottom:"80px"}}>
       <Header />
-      <nav>
-        <button onClick= {() => projectsSectionExpanded(true)}>PROJECTS</button>
-        
-        <button onClick= {() => contactSectionExpanded(true)}>CONTACT</button>
-        { contactSection && (
-          <div>
-            <ContactSection />
-
-            <button onClick= {() => contactSectionExpanded(false)}>Hide</button>
-          </div>
-        )}
-        
-      </nav>
-      <div className='body'>
-      {projectsSection && (
-          <div className='projectsSection'>
-            <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
-          <ProjectSection  />
-
-          <button onClick={() => projectsSectionExpanded(false)} >Hide</button>
-         </div>
-        )}
-
-      </div>
-
-      <WelcomeMessage />
-      
+      <Routes>
+         <Route path="/" element={<WelcomeMessage />} />
+         <Route path="/about" element={<About/>} />
+         <Route path="/projects" element={< ProjectSection />} />
+         <Route path="/contact" element={< ContactSection />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyledComponent, StyledProjectCard, StyledVerticalBox, StyledLink } from './styledComponents';
 
-
-
-
 const ProjectSection = () => {
 
-
+    const popupWindow = (url) => {
+       window.open( url,'popUpWindow','height=400,width=600,left=10,top=10,scrollbars=yes,menubar=no', "_blank",'noopener,noreferrer')
+       //if (newWindow) newWindow.opener = null
+    };
 
     return(
         <div className='projectsSection'>
@@ -15,8 +15,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4 >MediCabinet</h4>
-                <StyledLink onClick={() => window.open("https://medicabinett.netlify.app/", "_blank")}>Deployed App</StyledLink>
-                <StyledLink onClick={() => window.open("https://github.com/Build-Week-Medicine-Cabinet/front-end", "_blank")}>Github Repo</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://medicabinett.netlify.app/")}>Deployed App</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/Build-Week-Medicine-Cabinet/front-end")}>Github Repo</StyledLink>
                 <p>
                 This web app helps a user find a strain of medical marijuna to meet their symptoms.
                 </p>
@@ -33,7 +33,7 @@ const ProjectSection = () => {
                     • Implemented styling for the React components using styled components
                 </p>
                 <p>
-                    • Made a get request using AXIOS and used a json web token to to authorize the user
+                    • Made a get request using AXIOS and used a json web token to authorize the user
                 </p>  
                 </StyledVerticalBox>
             </StyledProjectCard>
@@ -41,8 +41,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>School In The Clouds</h4>
-                <StyledLink onClick={() => window.open("https://school-in-the-clouds-char.netlify.app/signUp", "_blank")}>Deployed React App</StyledLink>
-                <StyledLink onClick={() => window.open("https://github.com/School-in-the-clouds-bw/SITC_FE/tree/master/sitc", "_blank")}>Github repo</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://school-in-the-clouds-char.netlify.app/signUp")}>Deployed React App</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/School-in-the-clouds-bw/SITC_FE/tree/master/sitc")}>Github repo</StyledLink>
                 <p>
                 This was a multidisciplinary team project that allows an administrator to assign a tutor to a student for tutoring 
                 </p>
@@ -68,7 +68,7 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Co-make</h4>
-                <StyledLink onClick={() => window.open("https://github.com/Co-make-2/Back-end", "_blank")}>Github repo</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/Co-make-2/Back-end")}>Github repo</StyledLink>
                 <p>
                 This app allows a community/organization to match volunteers with projects that need to be completed.
                 </p>
@@ -96,8 +96,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Todo App</h4>
-                <StyledLink onClick={() => window.open("https://fervent-noyce-ff07a4.netlify.app/", "_blank")}>Deployed App</StyledLink>
-                <StyledLink onClick={() => window.open("https://github.com/Chris-Forrest/React-Todo/tree/Chris-Forrest", "_blank")}>Github repo</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://fervent-noyce-ff07a4.netlify.app/")}>Deployed App</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/Chris-Forrest/React-Todo/tree/Chris-Forrest")}>Github repo</StyledLink>
                 <p>
                     A basic todo app.
                 </p>
@@ -119,8 +119,8 @@ const ProjectSection = () => {
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Github User Cards</h4>
-                <StyledLink onClick={() => window.open("https://react-github-user-card-nine-fawn.vercel.app/", "_blank")}>Deployed App</StyledLink>
-                <StyledLink onClick={() => window.open("https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest", "_blank")}>Github repo</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://react-github-user-card-nine-fawn.vercel.app/", )}>Deployed App</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/Chris-Forrest/React-Github-User-Card/tree/Chris-Forrest")}>Github repo</StyledLink>
                 <p>
                     This is a react app that interacts with the github api to get the inputted users bio and followers.
                 </p>

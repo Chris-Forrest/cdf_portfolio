@@ -1,6 +1,20 @@
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
 
+export const StyledLink = styled.td`
+  color:  #0000EE;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    color: purple;
+  }
+
+  &.active {
+    color: red;
+  }
+`;
 
 export const StyledComponent = styled.div`
   display: flex;
@@ -9,11 +23,11 @@ export const StyledComponent = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 1007px){
-    background-color: #d7f095;
+    
   }
 
   @media (max-width: 640px){
-    background-color:#e7eba0;
+    
     flex-direction: column;
     align-items: center;
   }
@@ -21,6 +35,7 @@ export const StyledComponent = styled.div`
 
 export const StyledProjectCard = styled.div`
   display: flex;
+  opacity: 0.4;
   flex-direction: row;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 5px;
@@ -40,8 +55,17 @@ export const StyledProjectCard = styled.div`
 
   @media (max-width: 640px){
   width: 75%
+  opacity: 1;
   }
+
+  &:hover,
+  ${StyledLink}.active{
+    opacity: 1;
+  }
+  color: ${( props ) => 
+  props.path ? "red": "#0000EE"};
 `;
+
  export const StyledVerticalBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -50,35 +74,36 @@ export const StyledProjectCard = styled.div`
   align: center;
 `;
 
-export const StyledLink = styled.td`
-  color:  #0000EE;
-  text-decoration: underline;
-  cursor: pointer;
-`;
-
 export const StyledCSection = styled.div`
   display: flex;
   justify-content: space-around;
 `;
 
 export const StyledHeader = styled.div`
-  background-color: #3044f2;
+  background-color: #eddebb;
   display: flex;
+  opacity: 0.4;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #edc98e;
   font-family: 'New Tegomin', serif;
 
   @media (max-width: 1007px){
-    background-color: #c5f075;
+    background-color: #f7dc88;
+    justify-content: space-around;
   }
 
   @media (max-width: 640px){
-    justify-content: space-between;
+    justify-content: space-around;
     background-color:#f1f58c;
     color: #3044f2;
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `;
 
@@ -86,29 +111,37 @@ const animation = keyframes`
   0% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
   15% { opacity: 0.50; transform: translateY(200) skewY(13deg) skewX(13deg) rotateZ(30deg); filter:blur(4px);}
   35% { opacity: 0.75; transform: translateY(100) skewY(6deg) skewX(6deg) rotateZ(20deg); filter:blur(2px);}
-  60% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
-  100% { opacity: 0; transform: translateY(300px) skewY(20deg) skewX(20deg) rotateZ(40deg); filter:blur(6px); }
+  70% { opacity: 1; transform: translateY(0) skewY(0deg) skewX(0deg) rotateZ(0deg); filter:blur(0px);}
+  100% { opacity: 0;  }
 `
 
 export const AnimatedWelcomeMessage = styled.span`
   display: inline-block;
-  font-size: 5vh;
-  opacity:0%;
-  animation-name: ${animation};
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
+  
+  span {
+    display: inline-block;
+    font-size: 5vh;
+    opacity:0%;
+    animation-name: ${animation};
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  }
+
+  span:nth-child(2){
+    animation-delay: 1s;
+  }
+
+  span:nth-child(3){
+    animation-delay: 2s;
+  }
 
 `
 
 export default function TextAnimation(){
-  return (
-      <AnimatedWelcomeMessage>
-        <p>Welcome</p>
-        <p>to my mobile</p>
-        <p>responsive</p>
-        <p>react app</p>
-        <p>portfolio</p>
-      </AnimatedWelcomeMessage>
-    )
+  return (<AnimatedWelcomeMessage>
+    <span>Welcome to My</span>
+    <span>mobile responsive</span>
+    <span>single page app</span>
+  </AnimatedWelcomeMessage>)
 };
 
