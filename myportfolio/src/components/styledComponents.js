@@ -51,6 +51,7 @@ export const StyledProjectCard = styled.div`
 
   @media (max-width: 1007px){
   width: 45%;
+  opacity:1;
   }
 
   @media (max-width: 640px){
@@ -93,6 +94,8 @@ export const StyledHeader = styled.div`
   @media (max-width: 1007px){
     background-color: #f7dc88;
     justify-content: space-around;
+    color: white;
+    opacity: 1;
   }
 
   @media (max-width: 640px){
