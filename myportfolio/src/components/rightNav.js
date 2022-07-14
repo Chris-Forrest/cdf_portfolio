@@ -19,7 +19,7 @@ const Ul = styled.div`
     top: 0;
     right: 0;
     height: 30vh;
-    width: 10rem;
+    width: 8rem;
     transition: transform 0.3s ease-in-out;
   }
 `;
@@ -27,10 +27,10 @@ const Ul = styled.div`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-        <Link style={{marginRight:"8px", textDecoration:"none", color:"#edc98e"}} to="/projects">Projects</Link>
-        <Link style={{marginRight:"8px", textDecoration:"none", color:"#edc98e"}} to="/">About</Link>
-        <Link style={{marginRight:"8px", textDecoration:"none", color:"#edc98e"}} to="/contact">Contact</Link>
-        <Link style={{ textDecoration:"none", color:"#edc98e"}} to="/welcome">Welcome</Link>
+        <Link style={{marginRight:"8px", textDecoration:"none", color:"white"}} to="/projects">Projects</Link>
+        <Link style={{marginRight:"8px", textDecoration:"none", color:"white"}} to="/">About</Link>
+        <Link style={{marginRight:"8px", textDecoration:"none", color:"white"}} to="/contact">Contact</Link>
+        <Link style={{ textDecoration:"none", color:"white"}} to="/welcome">Welcome</Link>
     </Ul>
   )
 }

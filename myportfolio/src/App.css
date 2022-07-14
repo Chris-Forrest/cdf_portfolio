@@ -15,6 +15,12 @@
   color: #61dafb;
 }
 
+@media screen and (max-width: 1007px){
+  h1{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px){
   h1{
     display: none;

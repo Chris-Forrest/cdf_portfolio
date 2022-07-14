@@ -63,35 +63,6 @@ const ProjectSection = () => {
                 </StyledVerticalBox>
             </StyledProjectCard>
 
-
-            <StyledProjectCard>
-                <StyledVerticalBox>
-                <h4>Co-make</h4>
-                <StyledLink onClick={() => popupWindow("https://github.com/Co-make-2/Back-end")}>Github repo</StyledLink>
-                <p>
-                This app allows a community/organization to match volunteers with projects that need to be completed.
-                </p>
-                <p>
-                HTML, CSS, LESS, JavaScript, React, Axios, Yup,Styled components, material UI, Node.js, Express, Knex, SQLite3
-                </p>
-                <p>
-                • Made the backend using Node.js, Express
-                </p>
-                <p>
-                • Created all listings database,schema,routes,models and tests
-                </p>
-                <p>
-                • Implemented Knex to query a database created using SQLite3
-                </p>
-                <p>
-                • Performed tests using jest and supertest
-                </p>
-                <p>
-                • Tested routes with postman to ensure posted and recieved data
-                </p>
-                </StyledVerticalBox>
-            </StyledProjectCard>
-
             <StyledProjectCard>
                 <StyledVerticalBox>
                 <h4>Todo App</h4>
