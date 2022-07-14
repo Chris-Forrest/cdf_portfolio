@@ -90,7 +90,7 @@ export const StyledCSection = styled.div`
 export const StyledHeader = styled.div`
   background-color: #eddebb;
   display: flex;
-  opacity: 0.4;
+  opacity: 0.8;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -107,6 +107,7 @@ export const StyledHeader = styled.div`
   }
 
   @media (max-width: 640px){
+
     justify-content: space-between;
     background-color:#f1f58c;
     color: #3044f2;
