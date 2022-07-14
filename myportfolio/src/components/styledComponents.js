@@ -90,7 +90,7 @@ export const StyledCSection = styled.div`
 export const StyledHeader = styled.div`
   background-color: #eddebb;
   display: flex;
-  opacity: 0.4;
+  opacity: 0.8;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
