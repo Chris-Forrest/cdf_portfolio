@@ -15,8 +15,8 @@ function App() {
     <div className="App" style={{ backgroundImage: `url(${background})`, paddingBottom:"80px"}}>
       <Header />
       <Routes>
-         <Route path="/" element={<WelcomeMessage />} />
-         <Route path="/about" element={<About/>} />
+         <Route path="/welcome" element={<WelcomeMessage />} />
+         <Route path="/" element={<About/>} />
          <Route path="/projects" element={< ProjectSection />} />
          <Route path="/contact" element={< ContactSection />} />
       </Routes>

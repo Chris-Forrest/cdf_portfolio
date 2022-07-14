@@ -55,7 +55,7 @@ export const StyledProjectCard = styled.div`
   }
 
   @media (max-width: 640px){
-  width: 75%
+  width: 100%
   opacity: 1;
   }
 
@@ -73,11 +73,18 @@ export const StyledProjectCard = styled.div`
   margin: 1px;
   padding: 1px;
   align: center;
+  flex-wrap: wrap;
 `;
 
 export const StyledCSection = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 640px){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 `;
 
 export const StyledHeader = styled.div`
@@ -90,6 +97,7 @@ export const StyledHeader = styled.div`
   font-size: calc(10px + 2vmin);
   color: #edc98e;
   font-family: 'New Tegomin', serif;
+  height: 20%;
 
   @media (max-width: 1007px){
     background-color: #f7dc88;
@@ -99,7 +107,7 @@ export const StyledHeader = styled.div`
   }
 
   @media (max-width: 640px){
-    justify-content: space-around;
+    justify-content: space-between;
     background-color:#f1f58c;
     color: #3044f2;
     opacity: 1;

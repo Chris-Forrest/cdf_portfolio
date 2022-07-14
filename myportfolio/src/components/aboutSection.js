@@ -6,7 +6,6 @@ const AboutSection = () => {
 
     return (
         <div>
-            <Carousel />
             <h5>Hi, I'm Chris Forrest!
                 I'm a Full Stack web 
                 developer with a passion 
@@ -16,6 +15,7 @@ const AboutSection = () => {
                 about are music, fishing, 
                 kayaking, and improving my 
                 sourdough bread game.</h5>
+                <Carousel />
         </div>
     )
 };
