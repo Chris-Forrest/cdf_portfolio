@@ -4,8 +4,7 @@ import { StyledComponent, StyledProjectCard, StyledVerticalBox, StyledLink } fro
 const ProjectSection = () => {
 
     const popupWindow = (url) => {
-       window.open( url,'popUpWindow','height=400,width=600,left=10,top=10,scrollbars=yes,menubar=no', "_blank",'noopener,noreferrer')
-       //if (newWindow) newWindow.opener = null
+       window.open( url,'popUpWindow')
     };
 
     return(

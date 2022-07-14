@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
-   
-   
    background-color: grey;
    position: fixed;
    bottom: 0;
