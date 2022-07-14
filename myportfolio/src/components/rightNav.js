@@ -11,14 +11,15 @@ const Ul = styled.div`
   
   @media (max-width: 640px) {
     display:flex;
+    flex-flow: column nowrap;
     justify-content: space-around;
     background-color: #0D2538;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    height: 10vh;
-    width: 32rem;
+    height: 30vh;
+    width: 10rem;
     transition: transform 0.3s ease-in-out;
   }
 `;
