@@ -108,6 +108,29 @@ const ProjectSection = () => {
                 </p>
                 </StyledVerticalBox>
             </StyledProjectCard>  
+
+            <StyledProjectCard>
+                <StyledVerticalBox>
+                <h4>Virtual store</h4>
+                <StyledLink onClick={() => popupWindow("https://mern-stack-project-37om.onrender.com/", )}>Deployed App</StyledLink>
+                <StyledLink onClick={() => popupWindow("https://github.com/Chris-Forrest/MERN-stack-project")}>Github repo</StyledLink>
+                <p>
+                    This is a Full Stack Application with a node.js backend server that connects to MongoDB with a Vite React frontend.
+                </p>
+                <p> 
+                    Chakra UI was used to design the frontend. 
+                </p>
+                <p>
+                    • The app shows products stored in the MongoDB database.
+                </p>
+                <p>
+                    • Products can be created, updated and deleted.
+                </p>
+                <p> 
+                    • This is a restful api that connects to MongoDB and allows the Vite React frontend to perform CRUD operations.
+                </p>
+                </StyledVerticalBox>
+            </StyledProjectCard>  
             </StyledComponent>
         </div>
     )
